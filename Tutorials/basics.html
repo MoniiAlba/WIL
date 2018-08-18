@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>HTML - Elementos básicos </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<div id="back">
+		<div id="content">
+			<br>
+
+			<div class="menu">
+				<ul class="nav nav-tabs">
+				  <li role="presentation"><a href="HTML tut.html" style="color: #015cab;">Inicio</a></li>
+				  <li role="presentation" class="active"><a href="basics.html" style="color: #015cab;">Elementos básicos</a></li>
+				  <li role="presentation"><a href="atributos.html" style="color: #015cab;">Atributos</a></li>
+				  <li role="presentation"><a href="format.html" style="color: #015cab;">Formato de texto</a></li>
+				  <li role="presentation"><a href="citas.html" style="color: #015cab;">Citas</a></li>
+				  <li role="presentation"><a href="coment.html" style="color: #015cab;">Comentarios</a></li>
+				</ul>
+			</div>
+
+			<h1>Headings (<i>&lt; h1 &gt;</i>)</h1>
+
+			
+
+			<div class="col-md-5">
+				<p>Los headings son las etiquetas que se usan para los encabezados y partes  importantes del documento HTML. Los encabezados van desde <i>&lt; h1 &gt;</i> que define el más importante, <i>&lt; h2 &gt;</i>, ..., hasta <i>&lt; h6 &gt;</i>, el de menor importancia. El texto del encabezado se escribe entre las etiquetas de apertura y de cierre: <i>&lt; h1 &gt;</i> Encabezado 1<i>&lt; /h1 &gt;</i>.</p>
+
+				<p> Los encabezados son importantes ya que ayudan a las herramientas de búsqueda a encontrar la estructura y contenido de la página web.</p>
+
+				<p>Se puede utilizar la etiqueta <i>&lt; hr &gt;</i> para separar el contenido o definir un cambio en la página html. Esta etiqueta se despliega como una línea horizontal, ideal para colocarse entre los encabezados y sus respectivas secciones </p>
+			</div>
+
+			<div class="col-md-6">
+				<img id="enca" height="300px"; width="350px"; src="imgs/headings.png"; >
+			</div>
+
+			<br>
+
+			<h1>Párrafos (<i>&lt; p &gt;</i>)</h1>
+
+			<div class="row">
+				<div class="col-md-1">
+					
+				</div>
+
+				<div class="col-md-11">
+					<p>El texto que se visualiza en una página web se escribe entre las etiquetas <i>&lt; p &gt;</i> y <i>&lt; /p &gt;</i>. Es importante tomar recordar que HTML no toma en cuenta la manera en que escribamos el texto, ya que el formato como lo despliegue el explorador va a ser diferente y sin "espacios extras". Por esta razón podemos incluir espacios entre líneas con <i>&lt; br &gt;</i> (esta etiqueta no requiere una etiqueta de cierre).</p>
+				</div>
+			</div>
+
+
+			
+
+			<h1>Links (<i>&lt; a &gt;</i>)</h1>
+
+			<div>
+				<p>Se pueden definir links a otras páginas mediante las etiquetas <i>&lt; a &gt;</i> y <i>&lt; /a &gt;</i>. Los links se pueden agregar en cualquier parte de una página web, tales como botones, imágenes o texto. Hacia dónde se va a dirigir al pulsar el hipervínculo se define en el atributo <i>href</i> de la siguiente manera: </p>	
+			</div>
+
+			
+
+			<img src="imgs/link.png" id="imgLink">
+
+			<br> <br> <br>
+
+			<div>
+				<p> En caso de que se quiera redirigir a otro documento html creado por nosotros, en lugar de escribir un url se escribe la dirección del path donde el documento se localiza.</p>
+			
+			</div>
+			
+
+			<h1>Imágenes (<i>&lt; img &gt;</i>)</h1>
+
+			<div>
+				<p>Al insertar una imagen solamente se usa la etiqueta de abertura: <i>&lt; img &gt;</i>. Como atributos se especifica <i>src</i> donde va el url de una imágen de internet o el path de un archivo local; de manera opcional se especifican <i>heigth</i> y <i>width</i> para determinar el tamaño de la imagen; y también el atributo <i>alt</i> que añade un texto en caso de no encontrar la imagen especificada. </p>
+			
+			</div>	
+
+			<img src="imgs/img.png" id="imgImg" alt="Digo Hola">
+			
+			<h1>Botones (<i>&lt; button &gt;</i>)</h1>
+
+			<div>
+				<p>Los botones pueden ser muy útiles para colocar hipervínculos o realizar acciones en la misma página. Pueden incluir texto de la siguiente manera: </p>
+			
+			</div>	
+
+			
+
+			<img src="imgs/bot.png" id="imgBot">
+
+			<h1>Listas (<i>&lt; ul &gt;</i> o <i>&lt; ol &gt;</i>)</h1>
+
+			<br> <br>
+
+			<div class="row">		
+
+				<div class="col-md-4">
+					<img src="imgs/list.png" id="imgList">
+				</div>
+
+				<div class="col-md-6">
+					<p>Para enlistar información se puede usar <i>&lt; ul &gt;</i> en dado caso que la información enlistada no tenga orden alguno; en caso contrario se utiliza <i>&lt; ol &gt;</i>. Dentro de estas etiquetas se utilizan <i>&lt; li &gt;</i> en cada elemento que se desee enlistar, tal como se muestra en la imagen.</p>
+				</div>
+
+				<div class="col-md-2">
+
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+	
+
+	
+
+</body>
+
+
+</html
