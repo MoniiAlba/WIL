@@ -1,0 +1,49 @@
+body{
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+
+#pa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: block;
+}
+
+#pa1{
+	height: 50%;
+	display: -webkit-box;
+
+}
+
+#pa2{
+	height: 50%;
+	display: -webkit-box;
+
+}
+
+#h1{
+	width: 50%;
+	background-color: red;
+	height: 100%
+}
+
+#h2{
+	width: 50%;
+	background-color: blue;
+	height: 100%
+}
+
+#h3{
+	width: 50%;
+	background-color: purple;
+	height: 100%
+}
+
+#h4{
+	width: 50%;
+	background-color: gray;
+	height: 100%
+}
