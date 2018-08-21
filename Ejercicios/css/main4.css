@@ -1,0 +1,41 @@
+body{
+	height:100%;
+	width: 100%;
+	margin: 0px;
+}
+
+#pa{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 150px;
+}
+
+.cuadro{
+	height: 100%;
+	width: 20%;
+	background-color: #01fb00;
+	border-style: solid;
+	border-color: black;
+	border-width: thin;
+}
+
+#c1{
+	background-color: red;
+}
+
+#c2{
+	margin-top: 25px;
+}
+
+#c3{
+	margin-top: 50px;
+}
+
+#c4{
+	margin-top: 75px;
+}
+
+#c5{
+	margin-top: 100px;
+}
