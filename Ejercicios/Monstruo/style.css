@@ -32,7 +32,7 @@ h1{
 
 
 .cont{
-	width: 1140px;
+	width: 880px;
 	height: 110px;
 	border: solid 1px gray;
 	display: flex;
@@ -41,7 +41,7 @@ h1{
 }
 
 .hist{
- 	width: 1140px;
+ 	width: 880px;
 	border: solid 1px gray;
 	display: block;
 }

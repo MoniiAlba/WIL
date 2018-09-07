@@ -49,7 +49,12 @@
     </div>
     <br> <br>
     <div class="row" id="ataques" style="text-align: -webkit-center;">
-      <div class="cont" id="controles">
+      
+      <div class="col-md-1">
+        
+      </div>
+
+      <div class="col-md-10 cont" id="controles">
         <template v-if="show">
           <button id="start" @click="show = !show">Start</button>
         </template>
@@ -66,14 +71,20 @@
         
         
       </div>
+
+      <div class="col-md-1"></div>
       
     </div>
     <br>
 
     <div class="row" id="historial" style="text-align: -webkit-center;" v-if="showH">
-      <div class="hist">
+      <div class="col-md-1">
+        
+      </div>
 
-        <div >
+      <div class="col-md-10 hist">
+
+        <div>
           <div class="dam" v-for="(d,i) in damage">
            
 
@@ -92,6 +103,10 @@
          </div>
 
         </div>
+        
+      </div>
+
+      <div class="col-md-1">
           
       </div>
     </div> 
