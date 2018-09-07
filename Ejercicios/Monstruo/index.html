@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Fight the monster </title>
+  <script src="vue.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div id="exercise">
+    <br>
+    <div class="row" id="vida">
+      <div class="col-md-1">
+      </div>
+
+      <div class="col-md-4">
+        <h1>YOU</h1>
+        <br>
+        <div class="healthBar">
+          <div  class="normalH" id="youHealth" :style="{width: anchoY*3+'px'}" :class="{dangerH: anchoY<=15}" >
+            <p>{{anchoY}}</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        
+      </div>
+      
+      <div class="col-md-4">
+        <h1>MONSTER</h1>
+        <br>
+        <div class="healthBar">
+          <div class="normalH" id="mHealth" :style="{width: anchoM*3+'px'}" :class="{dangerH: anchoM<=15}">
+            <p>{{anchoM}}</p>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col-md-1"></div>
+      
+    </div>
+    <br> <br>
+    <div class="row" id="ataques" style="text-align: -webkit-center;">
+      <div class="cont" id="controles">
+        <template v-if="show">
+          <button id="start" @click="show = !show">Start</button>
+        </template>
+        
+        <template v-else >
+          <button id="attack" @click="hit()" style="margin: 20px;">ATTACK</button>
+          <br>
+          <button id="sattack" @click="megaHit()" style="margin: 20px;">SUPER ATTACK</button>
+          <br>
+          <button id="heal" @click="heal()" style="margin: 20px;">HEAL</button>
+          <br>
+          <button id="giveUp" @click="start()" style="margin: 20px;">GIVE UP</button>
+        </template>
+        
+        
+      </div>
+      
+    </div>
+    <br>
+
+    <div class="row" id="historial" style="text-align: -webkit-center;" v-if="showH">
+      <div class="hist">
+
+        <div >
+          <div class="dam" v-for="(d,i) in damage">
+           
+
+            <p v-if="i%2 == 0 && d>0" id="cura" >
+              You heal for {{Math.abs(d)}}
+            </p>   
+
+            <p v-if="i%2 == 0 && d<0" id="dYou" >
+              You hit monster for {{Math.abs(d)}}
+            </p>  
+            
+            <p id="dMons" v-if="i%2!=0" >
+              Monster hits you for {{Math.abs(d)}}
+            </p>
+
+         </div>
+
+        </div>
+          
+      </div>
+    </div> 
+
+  </div>
+<script src="app.js"></script>
+</body>
+
+</html>
